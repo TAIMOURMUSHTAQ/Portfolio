@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taimuor Mushtaq | AI & ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Taimoor</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary nav-cta">Hire Me</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for Opportunities
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Taimour Mushtaq</span>
+                    <span class="wave">👋</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate Software Engineer specializing in <strong>Artificial Intelligence</strong> 
+                    and <strong>Machine Learning</strong>. Transforming complex data into intelligent solutions 
+                    that drive innovation.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View Projects
+                    </a>
+                    <a href="Taimoor_CV.pdf" class="btn btn-outline" download="Taimoor_CV.pdf">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/taimourmushtaq/" target="_blank" class="hero-social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/TAIMOURMUSHTAQ" target="_blank" class="hero-social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/khantaimoour/" target="_blank" class="hero-social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/taimour.khan.1029770" target="_blank" class="hero-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="6">0</span>
+                        <span class="stat-label">Months Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span><span>+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span><span>+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-wrapper">
+                    <div class="image-glow"></div>
+                    <div class="image-border"></div>
+                    <img src="profile.jpg" alt="Taimoor - AI & ML Engineer">
+                    <div class="floating-icons">
+                        <div class="float-icon icon-1"><i class="fab fa-python"></i></div>
+                        <div class="float-icon icon-2"><i class="fas fa-brain"></i></div>
+                        <div class="float-icon icon-3"><i class="fas fa-robot"></i></div>
+                        <div class="float-icon icon-4"><i class="fas fa-database"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get to Know Me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="800">
+                    <div class="about-img-wrapper">
+                        <img src="profile.jpg" alt="Taimoor">
+                        <div class="experience-badge">
+                            <span class="exp-number">6+</span>
+                            <span class="exp-text">Months<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-duration="800">
+                    <h3>Software Engineer & AI/ML Enthusiast</h3>
+                    <p>
+                        I'm a dedicated <strong>BS Computer Science</strong> student at 
+                        <strong>Federal Urdu University of Arts, Science and Technology, Islamabad</strong>, 
+                        with a burning passion for Artificial Intelligence and Machine Learning.
+                    </p>
+                    <p>
+                        My journey in tech has equipped me with a strong foundation in programming fundamentals 
+                        across multiple languages including C++, Java, Python, and C#. I specialize in developing 
+                        intelligent systems that leverage the power of machine learning to solve real-world problems.
+                    </p>
+                    <p>
+                        With hands-on experience from internships at <strong>Eziline Software House</strong>, 
+                        <strong>ArchTech</strong>, and <strong>Developer Hub</strong>, I've honed my skills in 
+                        building scalable AI solutions and data-driven applications.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Education</strong>
+                                <span>BS Computer Science - FUUAST</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Islamabad, Pakistan</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <strong>Focus</strong>
+                                <span>AI / Machine Learning / Data Science</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>taimoourkhan667@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="Taimoor_CV.pdf" class="btn btn-primary" download="Taimoor_CV.pdf">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+            </div>
+            
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="programming">
+                    <i class="fas fa-code"></i>
+                    Programming
+                </button>
+                <button class="tab-btn" data-tab="aiml">
+                    <i class="fas fa-brain"></i>
+                    AI / ML
+                </button>
+                <button class="tab-btn" data-tab="tools">
+                    <i class="fas fa-tools"></i>
+                    Tools & Tech
+                </button>
+                <button class="tab-btn" data-tab="databases">
+                    <i class="fas fa-database"></i>
+                    Databases
+                </button>
+            </div>
+
+            <div class="skills-content">
+                <!-- Programming Languages -->
+                <div class="tab-content active" id="programming" data-aos="fade-up">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon cpp">
+                                <span>C++</span>
+                            </div>
+                            <h4>C++</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h4>Java (OOP)</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon csharp">
+                                <span>C#</span>
+                            </div>
+                            <h4>C# / .NET</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="tab-content" id="aiml">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon ml">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>Machine Learning</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon ai">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Artificial Intelligence</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon ds">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Data Science</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon dl">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h4>Deep Learning</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="tab-content" id="tools">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                            </div>
+                            <h4>TensorFlow</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                            </div>
+                            <h4>Pandas</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+                            </div>
+                            <h4>NumPy</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon sklearn">
+                                <span>SK</span>
+                            </div>
+                            <h4>Scikit-Learn</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="tab-content" id="databases">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon sql">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>SQL</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon mysql">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                            </div>
+                            <h4>MySQL</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite">
+                            </div>
+                            <h4>SQLite</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="82"></div>
+                            </div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon pysql">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>SQL with Python</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">
+                                <i class="far fa-calendar-alt"></i>
+                                3 Months
+                            </span>
+                            <span class="timeline-type internship">Internship</span>
+                        </div>
+                        <h3>Software Engineering Intern</h3>
+                        <h4><i class="fas fa-building"></i> Eziline Software House</h4>
+                        <p>
+                            Worked on developing software solutions and gained hands-on experience in 
+                            real-world project development. Collaborated with senior developers on 
+                            various client projects involving software design and implementation.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Software Development</span>
+                            <span>Team Collaboration</span>
+                            <span>Project Management</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">
+                                <i class="far fa-calendar-alt"></i>
+                                3 Months (Virtual)
+                            </span>
+                            <span class="timeline-type virtual">Virtual Internship</span>
+                        </div>
+                        <h3>AI/ML Intern</h3>
+                        <h4><i class="fas fa-building"></i> ArchTech</h4>
+                        <p>
+                            Focused on artificial intelligence and machine learning projects. 
+                            Developed ML models for various applications including spam classification 
+                            and digit recognition. Enhanced skills in data preprocessing and model optimization.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Machine Learning</span>
+                            <span>Python</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">
+                                <i class="far fa-calendar-alt"></i>
+                                3 Months (Virtual)
+                            </span>
+                            <span class="timeline-type virtual">Virtual Internship</span>
+                        </div>
+                        <h3>Developer Intern</h3>
+                        <h4><i class="fas fa-building"></i> Developer Hub</h4>
+                        <p>
+                            Contributed to development projects focusing on data science and 
+                            AI applications. Gained experience in building intelligent systems 
+                            and working with large datasets.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Data Science</span>
+                            <span>AI Development</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Certifications & <span class="gradient-text">Courses</span></h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.svg" alt="Coursera">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Machine Learning Specialization</h3>
+                        <p class="cert-issuer">
+                            <i class="fas fa-award"></i>
+                            Coursera - Stanford University
+                        </p>
+                        <p class="cert-description">
+                            Comprehensive specialization covering supervised learning, unsupervised learning, 
+                            recommender systems, and reinforcement learning.
+                        </p>
+                        <div class="cert-badge">
+                            <i class="fas fa-medal"></i>
+                            Verified Certificate
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="cert-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.svg" alt="Coursera">
+                    </div>
+                    <div class="cert-content">
+                        <h3>AI For Everyone</h3>
+                        <p class="cert-issuer">
+                            <i class="fas fa-award"></i>
+                            Coursera - DeepLearning.AI
+                        </p>
+                        <p class="cert-description">
+                            Understanding AI technology, its business impact, and how to navigate 
+                            the rise of AI in various industries.
+                        </p>
+                        <div class="cert-badge">
+                            <i class="fas fa-medal"></i>
+                            Verified Certificate
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.svg" alt="Coursera">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Python for Data Science & AI</h3>
+                        <p class="cert-issuer">
+                            <i class="fas fa-award"></i>
+                            Coursera - IBM
+                        </p>
+                        <p class="cert-description">
+                            Python programming fundamentals for data science, including data manipulation, 
+                            analysis, and visualization techniques.
+                        </p>
+                        <div class="cert-badge">
+                            <i class="fas fa-medal"></i>
+                            Verified Certificate
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="cert-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.svg" alt="Coursera">
+                    </div>
+                    <div class="cert-content">
+                        <h3>SQL Database</h3>
+                        <p class="cert-issuer">
+                            <i class="fas fa-award"></i>
+                            Coursera
+                        </p>
+                        <p class="cert-description">
+                            Comprehensive understanding of SQL databases, query writing, 
+                            database design, and data management principles.
+                        </p>
+                        <div class="cert-badge">
+                            <i class="fas fa-medal"></i>
+                            Verified Certificate
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.svg" alt="Coursera">
+                    </div>
+                    <div class="cert-content">
+                        <h3>SQL with Python</h3>
+                        <p class="cert-issuer">
+                            <i class="fas fa-award"></i>
+                            Coursera
+                        </p>
+                        <p class="cert-description">
+                            Integration of SQL databases with Python programming for data manipulation, 
+                            analysis, and building data-driven applications.
+                        </p>
+                        <div class="cert-badge">
+                            <i class="fas fa-medal"></i>
+                            Verified Certificate
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="ml" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-icon-placeholder">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Email Spam Classifier</h3>
+                        <p>ML model to classify emails as spam or ham using NLP techniques and various classification algorithms.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-Learn</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ml ai" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-icon-placeholder">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MNIST Digit Recognition</h3>
+                        <p>Deep learning model for handwritten digit recognition achieving high accuracy on the MNIST dataset.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>CNN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="data ml" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-icon-placeholder">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Titanic Survival Prediction</h3>
+                        <p>Predictive model to determine passenger survival on the Titanic using feature engineering and ML algorithms.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-Learn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="data ml" data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-icon-placeholder">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>House Price Prediction</h3>
+                        <p>Regression model to predict housing prices based on various features using advanced ML techniques.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>XGBoost</span>
+                            <span>Feature Engineering</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ai data" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-icon-placeholder">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sentiment Analysis</h3>
+                        <p>NLP-based sentiment analysis model for Twitter data to classify tweets as positive, negative, or neutral.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NLTK</span>
+                            <span>Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="data" data-aos="fade-up" data-aos-delay="350">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-icon-placeholder">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Heart Disease Prediction</h3>
+                        <p>Classification model to predict heart disease risk based on patient health metrics and medical history.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Random Forest</span>
+                            <span>Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's work together!</h3>
+                    <p>
+                        I'm always open to discussing new projects, creative ideas, or opportunities to 
+                        be part of your vision. Feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:taimoourkhan667@gmail.com">taimoourkhan667@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+923019770513">+92 301 9770513</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Islamabad, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/taimourmushtaq/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/TAIMOURMUSHTAQ" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/khantaimoour/" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/taimour.khan.1029770" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key - Get yours free at https://web3forms.com -->
+                    <input type="hidden" name="access_key" value="9f6af4f1-8103-4ec6-b212-4b099f326625">
+                    <input type="hidden" name="subject" value="New Contact from Portfolio Website">
+                    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                        <span class="form-icon"><i class="fas fa-user"></i></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                        <span class="form-icon"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject_line" name="subject_line" required>
+                        <label for="subject_line">Subject</label>
+                        <span class="form-icon"><i class="fas fa-tag"></i></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                        <span class="form-icon"><i class="fas fa-comment-alt"></i></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">Taimoor</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p>Building the future with AI & Machine Learning</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/taimourmushtaq/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/TAIMOURMUSHTAQ" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/taimourkhan/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/taimour.khan.1029770" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Taimour. All rights reserved.</p>
+                <p>Designed & Built with <span class="heart">❤</span> by Taimour</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
